@@ -21,7 +21,7 @@ public class PlayerCameraFollow : MonoBehaviour {
     {
         mainCamera = GetComponent<Camera>();
         player = GameObject.Find("Player");
-	    
+        player.GetComponent<Renderer>().material.color = Color.red;
 	}
 	
 	// Update is called once per frame
